@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(beaut.jpeg);   
+    background-position: center;
+    background-position: cover;
+    background-size: cover; 
+    height: 100%;
+    width: 100%;
+}
+nav{ 
+    background-color: rgb(134, 134, 132);
+    height: 5rem;
+    padding-top: 10px;
+}
+h3{
+    margin-left: 3em;
+    padding-top: 1.3rem;
+    color: #0000ff;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.miracle{
+    color: #ffa500;
+    margin-left: 1px;
+   
+}
+nav--links{
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5em;
+    margin: -22px  5em;
+    font-size: larger;
+   
+}
+nav--links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.socials ul {
+    background-color: #ffa500;
+    list-style: none;
+    padding: 15px 3px;
+    height: 10rem;
+    width: 70%;
+    line-height: 30px;
+    opacity: 0;
+    border-radius: 5px;
+    /* display: none; */
+} 
+.social-container:hover 
+.socials ul{
+    opacity: 1;
+    color: #ffffff;
+    background-image: linear-gradient(#ee4a4a,#4a4af3);
+    transition: all 5s 5ms;
+} 
+.home-container ul{
+    background-color: #5398a1;
+    list-style: none;
+    padding: 5px 3px;
+    height: 10rem;
+    width:  100px;
+    line-height: 40px;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 3;
+    /* display: none; */
+}
+.home-container:hover ul{
+    opacity: 1;
+    color: #ffffff;
+    background-image: linear-gradient(#ee4a4a,#4a4af3);
+    transition: all 5s 5ms;
+}
+.questions-container ul{
+    background-color: #a1539a;
+    list-style: none;
+    padding: 5px 3px;
+    height: 10rem;
+    width:  100px;
+    line-height: 40px;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 3;
+    /* display: none; */
+}
+
+.questions-container:hover ul{
+    opacity: 1;
+    color: #ffffff;
+    background-image: linear-gradient(#ee4a4a,#4a4af3);
+    transition: all 5s 5ms;
+}
+
+
+
+/* -----------this section contains my form content --------- */
+.hero{
+    background-color: rgba(154, 226, 235, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    min-height: 70vh;
+    border: 3px solid #808080c5;
+    border-radius: 7px;
+    width: 100vh;
+    margin-top: 2em;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+h1{
+    position: absolute;
+    transform: translateY(-100px);
+    color: blue;
+    margin-bottom: 4.5em;
+}
+form .email input{
+    padding: 1em 1rem ;
+    width: 20rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #80808011;
+    margin: 1.2em 0;
+}
+
+form .password input{
+    padding: 1em 1rem ;
+    width: 20rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #80808011;
+    margin: 10px 0 0.5em;
+}
+
+form .checkbox a{
+    /* background-color: green; */
+    margin-left: 3rem;
+}
+form :any-link{
+    color: rgb(5, 46, 148);
+    text-decoration: none;
+}
+form .login-btn button{
+    padding: 1em 1rem ;
+    width: 22rem;
+    border-radius: 15px;
+    background-color: white;
+    border-color: #80808011;
+    margin: 1.2em 0;
+}
+form .reset input{
+    padding: 0.5em 1rem ;
+    width: 5rem;
+    border-radius: 15px;
+    background-color: #8a8af7;
+    border-style: none;
+    margin: 1.2em 0.3em;
+    
+}
+
+
+/* -------------this secion is for my media screens------------- */
+/* ----------------for small screens ------------- */
+
+ @media screen and (min-width: 420px) { 
+    body{
+        /* background-color: red; */
+    }
+    nav{
+        opacity: 0;
+    }
+    h1{
+        transform: translateY(-55px);
+    }
+    .hero{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 1em;
+        width: 70vh;
+        height: 50vh;
+    }
+    form .email input{
+        margin: 10px 1em;
+    }
+    form .password input{
+        margin: 10px 1em;
+    }
+    form .checkbox {
+        margin: 1em;
+        font-size: large;
+    }
+    form .login-btn button{
+        width: 20rem;
+        padding: 10px;
+        margin-left: 1em;
+    }
+    form p{
+        font-size: large;
+        margin-left: 15px;
+        margin-inline: 20px;
+    }
+} 
+
+
+/* ------------- this is for medium screens----------- */
+@media screen and (min-width: 769px) {
+    body{
+        /* background-color: rgb(43, 22, 231); */
+    }
+    nav{
+        opacity: 1;
+        
+    }
+    h3{
+        opacity: 0;
+    }
+    nav--links{
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin: -22px 1em;
+        font-size: large;
+    }
+    .home-container ul{
+        width: 0;
+    }
+    .questions-container ul{
+        width: 0;
+    }    
+    .hero{
+        height: 30vh;
+        max-width: 80vh;
+        margin-top: 2.5em;
+    }
+    h1{
+        position: static;
+        transform: translate(200px, -50px);
+    }
+    form .login-btn button{
+        width: 20rem;
+        padding: 10px;
+        margin-left: -1em;
+    }
+}
+
+ /* -------------- this section is for  larfe screens--------------- */
+ @media screen and (min-width: 1024px){
+    body{
+        /* background-color: #00ff22; */
+    }
+    h3{
+        opacity: 1;
+    }
+    .hero{
+        height: 70vh;
+        width: 100vh;
+        margin-top: 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:  auto;
+        margin-top: 5em;
+    }
+    .home-container ul{
+        width: 100%;
+    }
+    .questions-container ul{
+        width: 100%;
+    }    
+    h1{
+        position: absolute;
+        top: 0;
+        transform: translateY(100px);
+        margin-bottom: 3em;
+    }
+
+
+
+
+
+ }  
+
+
+
+
+
+
+
+
